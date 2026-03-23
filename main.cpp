@@ -1,26 +1,6 @@
-// CSci114_P3.cpp
+
 // ashnoor jattana
-// csci 114_P3
 
-/*
- *
- * Description:
- * This program multiplies two matrices (A.txt and B.txt) using multiple threads.
- * Each thread computes one element of the resulting matrix C.
- *
-
- *
- * How to Compile:
- *   g++ -std=c++11 -pthread CSci114_P3.cpp -o P3
- *
- * How to Run:
- *   ./P3
- *   (When prompted, enter M N K)
- *   Example input: 4 5 6
- *
- *
- *
- */
 
 #include <iostream>
 #include <fstream>
@@ -126,7 +106,6 @@ int main() {
         readA();
         readB();
 
-    //
     vector<thread> myThreads;
 
     for (int i = 0; i < M; i++) {
