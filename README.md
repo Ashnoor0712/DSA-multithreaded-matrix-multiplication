@@ -1,4 +1,4 @@
-# Multithreaded Matrix Multiplication in C++
+## Multithreaded Matrix Multiplication in C++
 
 1. Overview
 This project implements matrix multiplication in C++ using multithreading. It reads two matrices from input files and creates a separate thread for each element in the resulting matrix.
