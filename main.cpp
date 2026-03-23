@@ -29,24 +29,7 @@ void readB() { ifstream f("B.txt");
   for (int i=0;i<N;++i) for (int j=0;j<K;++j) f >> B[i][j]; }
 
 
-/*bool read_matrix(const string& filename, int rows, int cols, int outp[MAX_N][MAX_N]) {
-   
-    ifstream file_1(filename);
-    if (!file_1.open)
-        return false;
-    for (int i = 0; i < rows; ++i)
-    {
-        for (int j = 0; j < cols; ++j)
-        {
-            file_1 >> outp[i][j]; // reading first
-            //return false;
-           // outp[i][j] = file_1[i][j];
-            if(!file_1)
-                return false;
-        }
-    }
-    return true;
-}*/
+
 
 // one thread computes cell (x,y)
 void threadCallback(int x, int y) {
@@ -60,40 +43,7 @@ void threadCallback(int x, int y) {
 }
 
 int main() {
-   /* (int argc, char** argv)
-    if (argc < 4) {
-        cerr << "Usage: " << argv[0] << " M N K\n";
-        return 1;
-    }
-    M = atoi(argv[1]); N = atoi(argv[2]); K = atoi(argv[3]);
-    if (M <= 0 || N <= 0 || K <= 0) {
-        cerr << "Invalid sizes (max " << MAX_N << ").\n";
-        return 1;
-    }*/
-    
-    /*int argc;
-    char** argv;
-    
-    if ( argc < 4) {
-        std::cout << "Enter M N K: ";
-        std::cin >> M >> N >> K;
-        if (!std::cin || M <= 0 || N <= 0 || K <= 0) {
-            std::cerr << "Invalid input.\n";
-            return 1;
-        }
    
-    }*/
-
-
-   /* if (!readA("A.txt", M, N, A)) {
-        cerr << "Failed to read A.txt as " << M << "x" << N << ".\n";
-        return 1;
-    }
-    if (!readB("B.txt", N, K, B)) {
-        cerr << "Failed to read B.txt as " << N << "x" << K << ".\n";
-        return 1;
-    }*/
-    
     cout << "Enter M N K: ";
         cin >> M >> N >> K; //  enter 4 5 6
 
